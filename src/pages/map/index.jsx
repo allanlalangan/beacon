@@ -26,7 +26,7 @@ export default function MapPage() {
       </Link>
       <section className="flex w-full">
         <div className="w-1/4 px-2">
-          <SearchBar setCoordinates={setCoordinates} />
+          {isLoaded && <SearchBar setCoordinates={setCoordinates} />}
         </div>
         <div className="w-3/4">
           {isLoaded && (
